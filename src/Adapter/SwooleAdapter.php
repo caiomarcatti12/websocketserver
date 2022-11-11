@@ -44,6 +44,12 @@ class SwooleAdapter implements WebSocketServerRunnerInterface
             $context->cacheManager->set($request->fd, '');
         });
 
+        // we can also run a regular HTTP server at the same time!
+        $server->on('request', function (Request $request, Response $response) {
+            $response->header('Content-Type', 'text/html');
+            $response->end(file_get_contents(__DIR__ . '/websocket.html'));
+        });
+
         $server->on('message', function (Server $server, Frame $frame) use($context) {
 
             $context->parseBody($frame);
