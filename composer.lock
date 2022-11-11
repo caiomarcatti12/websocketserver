@@ -55,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/core.git",
-                "reference": "b2e9461a9401945a097b490a089d36cf41b3b3c7"
+                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/b2e9461a9401945a097b490a089d36cf41b3b3c7",
-                "reference": "b2e9461a9401945a097b490a089d36cf41b3b3c7",
+                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
+                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
                 "shasum": ""
             },
             "default-branch": true,
@@ -84,7 +84,7 @@
                 "issues": "https://github.com/caiomarcatti12/core/issues",
                 "source": "https://github.com/caiomarcatti12/core/tree/master"
             },
-            "time": "2022-11-10T11:05:33+00:00"
+            "time": "2022-11-11T20:54:16+00:00"
         },
         {
             "name": "caiomarcatti12/data",
@@ -92,12 +92,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/data.git",
-                "reference": "64146badb5ca2d236672a4502aa2c57946a3c5a9"
+                "reference": "b127db548205972f40894ed31789ad5b6cc96bf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/data/zipball/64146badb5ca2d236672a4502aa2c57946a3c5a9",
-                "reference": "64146badb5ca2d236672a4502aa2c57946a3c5a9",
+                "url": "https://api.github.com/repos/caiomarcatti12/data/zipball/b127db548205972f40894ed31789ad5b6cc96bf1",
+                "reference": "b127db548205972f40894ed31789ad5b6cc96bf1",
                 "shasum": ""
             },
             "require": {
@@ -124,7 +124,7 @@
                 "issues": "https://github.com/caiomarcatti12/data/issues",
                 "source": "https://github.com/caiomarcatti12/data/tree/master"
             },
-            "time": "2022-11-04T18:15:56+00:00"
+            "time": "2022-11-11T20:53:36+00:00"
         },
         {
             "name": "caiomarcatti12/env",
