@@ -4,7 +4,7 @@ namespace CaioMarcatti12\WebSocketServer\Objects;
 
 use CaioMarcatti12\WebSocketServer\Exception\InvalidArgumentRouteConstruct;
 
-class Route extends \CaioMarcatti12\Webserver\Objects\Route
+class Route
 {
     private string $route;
     private string $class;
