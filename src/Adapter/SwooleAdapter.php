@@ -147,10 +147,6 @@ class SwooleAdapter implements WebSocketServerRunnerInterface
 
         $classProxyRouterInterface = BeanProxy::get(RouterResponse::class);
 
-        if (Assert::inArray($classProxyRouterInterface, [RouterResponse::class])) {
-            return null;
-        }
-
         return InstanceFactory::createIfNotExists($classProxyRouterInterface, ['', 200], false);
     }
 }
