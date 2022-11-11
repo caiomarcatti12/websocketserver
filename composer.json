@@ -1,0 +1,36 @@
+{
+  "name": "caiomarcatti12/websocketserver",
+  "description": "Minha Biblioteca",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Caio Marcatti",
+      "email": "caiomarcatti12@gmail.com"
+    }
+  ],
+  "autoload-dev" : {
+    "psr-4" : {
+      "Test\\" :  "tests/"
+    }
+  },
+  "autoload" : {
+    "psr-4" : {
+      "CaioMarcatti12\\WebSocketServer\\" :  "src/"
+    }
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "caiomarcatti12/core": "dev-master",
+    "caiomarcatti12/cache": "dev-master",
+    "caiomarcatti12/data": "dev-master"
+  },
+  "require-dev": {
+    "pestphp/pest": "2.x-dev"
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
