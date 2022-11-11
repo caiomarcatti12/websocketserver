@@ -13,14 +13,15 @@ use CaioMarcatti12\Core\Validation\Assert;
 use CaioMarcatti12\Data\BodyLoader;
 use CaioMarcatti12\Data\Request\Objects\Body;
 use CaioMarcatti12\Data\Request\Objects\Header;
+use CaioMarcatti12\Data\UUID;
 use CaioMarcatti12\Event\Interfaces\EventManagerInterface;
 use CaioMarcatti12\WebSocketServer\Exception\ResponseTypeException;
 use CaioMarcatti12\WebSocketServer\Exception\RouteNotFoundException;
 use CaioMarcatti12\WebSocketServer\Interfaces\WebSocketServerRunnerInterface;
 use CaioMarcatti12\WebSocketServer\Objects\Routes;
 use CaioMarcatti12\WebSocketServer\RouterResponse;
-use Ramsey\Uuid\Uuid;
 use Swoole\Http\Request;
+use Swoole\Http\Response;
 use Swoole\WebSocket\Frame;
 use Swoole\WebSocket\Server;
 use ReflectionClass;
@@ -111,7 +112,7 @@ class SwooleAdapter implements WebSocketServerRunnerInterface
     }
 
     private function parseCorrelationId(): void{
-        Header::add('x-correlation-id', Uuid::uuid4()->toString());
+        Header::add('x-correlation-id', UUID::v4());
     }
 
     private function parseResponse(string $class, string $method, mixed $response): mixed {
