@@ -35,7 +35,7 @@ class SwooleAdapter implements WebSocketServerRunnerInterface
     public function run(): void
     {
         $context = $this;
-        $server = new Server('0.0.0.0', '80');
+        $server = new Server('0.0.0.0', '81');
 
         $server->on('start', function (Server $server){
 
