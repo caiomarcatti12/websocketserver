@@ -106,18 +106,103 @@
             "time": "2022-11-08T23:32:05+00:00"
         },
         {
+            "name": "caiomarcatti12/cli",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caiomarcatti12/cli.git",
+                "reference": "376026866bab9a763a33b492a589d1df11cd9433"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caiomarcatti12/cli/zipball/376026866bab9a763a33b492a589d1df11cd9433",
+                "reference": "376026866bab9a763a33b492a589d1df11cd9433",
+                "shasum": ""
+            },
+            "require": {
+                "caiomarcatti12/core": "dev-master",
+                "phalcon/cli-options-parser": "1.3"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CaioMarcatti12\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caio Marcatti",
+                    "email": "caiomarcatti12@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/caiomarcatti12/cli/issues",
+                "source": "https://github.com/caiomarcatti12/cli/tree/master"
+            },
+            "time": "2022-11-10T11:05:14+00:00"
+        },
+        {
+            "name": "caiomarcatti12/compiler",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/caiomarcatti12/compiler.git",
+                "reference": "1558da363a54bef8f0f01cc65ef12d0fec820e95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/caiomarcatti12/compiler/zipball/1558da363a54bef8f0f01cc65ef12d0fec820e95",
+                "reference": "1558da363a54bef8f0f01cc65ef12d0fec820e95",
+                "shasum": ""
+            },
+            "require": {
+                "caiomarcatti12/core": "dev-master"
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CaioMarcatti12\\Compiler\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caio Marcatti",
+                    "email": "caiomarcatti12@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/caiomarcatti12/compiler/issues",
+                "source": "https://github.com/caiomarcatti12/compiler/tree/master"
+            },
+            "time": "2022-11-12T15:51:25+00:00"
+        },
+        {
             "name": "caiomarcatti12/core",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caiomarcatti12/core.git",
-                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9"
+                "reference": "1429ce9e311ec21c3cd680c704d813e48add14b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
-                "reference": "3879d4c0324fcb6ed5f6f6e440e79aa112cb8ef9",
+                "url": "https://api.github.com/repos/caiomarcatti12/core/zipball/1429ce9e311ec21c3cd680c704d813e48add14b6",
+                "reference": "1429ce9e311ec21c3cd680c704d813e48add14b6",
                 "shasum": ""
+            },
+            "require": {
+                "caiomarcatti12/cli": "dev-master",
+                "caiomarcatti12/compiler": "dev-master"
             },
             "default-branch": true,
             "type": "library",
@@ -140,7 +225,7 @@
                 "issues": "https://github.com/caiomarcatti12/core/issues",
                 "source": "https://github.com/caiomarcatti12/core/tree/master"
             },
-            "time": "2022-11-11T20:54:16+00:00"
+            "time": "2022-11-13T09:47:59+00:00"
         },
         {
             "name": "caiomarcatti12/data",
@@ -222,6 +307,84 @@
                 "source": "https://github.com/caiomarcatti12/env/tree/master"
             },
             "time": "2022-11-08T23:32:05+00:00"
+        },
+        {
+            "name": "phalcon/cli-options-parser",
+            "version": "v1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phalcon/cli-options-parser.git",
+                "reference": "1c5a7d0db23a88d8ba14646af75464cbbd115251"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phalcon/cli-options-parser/zipball/1c5a7d0db23a88d8ba14646af75464cbbd115251",
+                "reference": "1c5a7d0db23a88d8ba14646af75464cbbd115251",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5.8",
+                "squizlabs/php_codesniffer": "3.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phalcon\\Cop\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Phalcon Team",
+                    "email": "team@phalconphp.com",
+                    "homepage": "https://phalconphp.com/en/team"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/phalcon/cli-options-parser/graphs/contributors"
+                }
+            ],
+            "description": "Command line arguments/options parser.",
+            "homepage": "https://phalconphp.com",
+            "keywords": [
+                "argparse",
+                "cli",
+                "command",
+                "command-line",
+                "getopt",
+                "line",
+                "option",
+                "optparse",
+                "parser",
+                "terminal"
+            ],
+            "support": {
+                "forum": "https://forum.phalconphp.com/",
+                "issues": "https://github.com/phalcon/cli-options-parser/issues",
+                "source": "https://github.com/phalcon/cli-options-parser"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/phalcon",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/phalcon",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2021-08-03T02:44:01+00:00"
         },
         {
             "name": "predis/predis",
@@ -517,12 +680,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "2f1fd784fe5560675722a1e5cbbcece5f43bf3a0"
+                "reference": "f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/2f1fd784fe5560675722a1e5cbbcece5f43bf3a0",
-                "reference": "2f1fd784fe5560675722a1e5cbbcece5f43bf3a0",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc",
+                "reference": "f59bbe44bf7d96f24f3e2b4ddc21cd52c1d2adbc",
                 "shasum": ""
             },
             "require": {
@@ -564,9 +727,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/4.x"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v4.15.2"
             },
-            "time": "2022-09-10T20:41:13+00:00"
+            "time": "2022-11-12T15:38:23+00:00"
         },
         {
             "name": "nunomaduro/collision",
