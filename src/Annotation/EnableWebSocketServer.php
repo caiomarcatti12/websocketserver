@@ -20,7 +20,7 @@ class EnableWebSocketServer
     {
         $this->adapter = $adapter;
 
-        Modules::enable(ModulesEnum::WEBSOCKETSEVER);
+        Modules::enable(ModulesEnum::WEBSOCKETSERVER);
     }
 
     public function getAdapter(): string

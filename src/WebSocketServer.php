@@ -18,7 +18,7 @@ class WebSocketServer implements ServerRunInterface
 
     public function run(): void
     {
-        if(Modules::isEnabled(ModulesEnum::WEBSOCKETSEVER))
+        if(Modules::isEnabled(ModulesEnum::WEBSOCKETSERVER))
             $this->WebSocketServerRunner->run();
     }
 }
