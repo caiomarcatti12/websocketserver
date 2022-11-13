@@ -1,6 +1,7 @@
 {
   "name": "caiomarcatti12/websocketserver",
-  "description": "Minha Biblioteca",
+  "description": "",
+  "version": "2.0.0",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -19,14 +20,14 @@
       "CaioMarcatti12\\WebSocketServer\\" :  "src/"
     }
   },
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
   "require": {
-    "caiomarcatti12/core": "dev-master",
-    "caiomarcatti12/cache": "dev-master",
-    "caiomarcatti12/data": "dev-master"
+    "caiomarcatti12/core": "2.0.0",
+    "caiomarcatti12/data": "2.0.0"
   },
   "require-dev": {
-    "pestphp/pest": "2.x-dev"
+    "pestphp/pest": ">=v1.22.2"
   },
   "config": {
     "allow-plugins": {

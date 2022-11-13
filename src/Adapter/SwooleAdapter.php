@@ -1,7 +1,6 @@
 <?php
 namespace CaioMarcatti12\WebSocketServer\Adapter;
 
-use CaioMarcatti12\CacheManager\CacheManager;
 use CaioMarcatti12\Core\Bean\Objects\BeanCache;
 use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
 use CaioMarcatti12\Core\Factory\Annotation\Autowired;
@@ -29,9 +28,6 @@ use ReflectionMethod;
 
 class SwooleAdapter implements WebSocketServerRunnerInterface
 {
-    #[Autowired]
-    private CacheManager $cacheManager;
-
     public function run(): void
     {
         $context = $this;
@@ -42,7 +38,7 @@ class SwooleAdapter implements WebSocketServerRunnerInterface
         });
 
         $server->on('open', function (Server $server, Request $request) use ($context) {
-            $context->cacheManager->set($request->fd, '');
+
         });
 
         // we can also run a regular HTTP server at the same time!
@@ -85,7 +81,7 @@ class SwooleAdapter implements WebSocketServerRunnerInterface
         });
 
         $server->on('close', function (Server $server, int $client) use ($context) {
-            $context->cacheManager->del($client);
+
         });
 
         $server->start();
