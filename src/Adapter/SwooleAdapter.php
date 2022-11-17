@@ -3,7 +3,6 @@ namespace CaioMarcatti12\WebSocketServer\Adapter;
 
 use CaioMarcatti12\Core\Bean\Objects\BeanCache;
 use CaioMarcatti12\Core\Bean\Objects\BeanProxy;
-use CaioMarcatti12\Core\Factory\Annotation\Autowired;
 use CaioMarcatti12\Core\Factory\InstanceFactory;
 use CaioMarcatti12\Core\Factory\Invoke;
 use CaioMarcatti12\Core\Modules\Modules;
@@ -19,12 +18,12 @@ use CaioMarcatti12\WebSocketServer\Exception\RouteNotFoundException;
 use CaioMarcatti12\WebSocketServer\Interfaces\WebSocketServerRunnerInterface;
 use CaioMarcatti12\WebSocketServer\Objects\Routes;
 use CaioMarcatti12\WebSocketServer\RouterResponse;
+use ReflectionClass;
+use ReflectionMethod;
 use Swoole\Http\Request;
 use Swoole\Http\Response;
 use Swoole\WebSocket\Frame;
 use Swoole\WebSocket\Server;
-use ReflectionClass;
-use ReflectionMethod;
 
 class SwooleAdapter implements WebSocketServerRunnerInterface
 {

@@ -3,9 +3,9 @@
 namespace CaioMarcatti12\WebSocketServer\Annotation;
 
 
+use Attribute;
 use CaioMarcatti12\Core\Bean\Annotation\AliasFor;
 use CaioMarcatti12\Core\Bean\Enum\BeanType;
-use Attribute;
 
 #[AliasFor(BeanType::CONTROLLER)]
 #[Attribute(Attribute::TARGET_CLASS|Attribute::TARGET_METHOD)]

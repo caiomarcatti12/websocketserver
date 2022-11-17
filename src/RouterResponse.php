@@ -2,7 +2,6 @@
 
 namespace CaioMarcatti12\WebSocketServer;
 
-use CaioMarcatti12\Core\Validation\Assert;
 use CaioMarcatti12\Data\ObjectMapper;
 
 class RouterResponse

@@ -2,15 +2,10 @@
 
 namespace Test;
 
-use CaioMarcatti12\Repository\Connector\MongoDB;
-use CaioMarcatti12\Repository\Connector\Mysql;
 use CaioMarcatti12\Repository\DestinatarioObjetoValor;
 use CaioMarcatti12\Repository\MensagemEntidade;
 use CaioMarcatti12\Repository\ModeloMensagem;
 use CaioMarcatti12\Repository\TipoEnum;
-use CaioMarcatti12\Data\ObjectMapper;
-use Illuminate\Support\Str;
-use PHPUnit\Framework\TestCase;
 //
 //class ExampleTest extends TestCase {
 //    public function testObjectMapperToArray():void{
